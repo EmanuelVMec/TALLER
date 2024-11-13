@@ -4,8 +4,8 @@ from django.db import models
 class Categoria(models.Model):
     nombre = models.CharField(max_length=50, unique=True)
 
-def _str_(self):
-    return self.nombre(self)
+    def _str_(self):
+        return self.nombre(self)
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
